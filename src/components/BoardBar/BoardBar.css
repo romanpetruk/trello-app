@@ -1,0 +1,12 @@
+@import '../../settings.css';
+
+.navbar{
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.board{
+	background-color: var(--navbar-board-bg-color);
+	font-size: 1.1rem;
+}

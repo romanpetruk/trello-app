@@ -1,0 +1,81 @@
+@import "../../settings.css";
+
+.board-columns {
+  display: flex;
+  margin: 0 10px 10px;
+  overflow: auto;
+  gap: 10px;
+}
+
+.board-columns::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.board-columns::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+.board-columns::-webkit-scrollbar-thumb {
+  background-color: rgb(219, 213, 213);
+  border-right: 5px solid #ebecf0;
+}
+
+.column {
+  flex: 0 0 auto;
+  width: 300px;
+  height: calc(100%-10px);
+}
+
+.column > * {
+  color: #333;
+  background-color: #ebecf0;
+  padding: 0 8px;
+}
+
+header {
+  padding-left: 15px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor:grab;
+}
+
+footer {
+  padding-left: 10px;
+  height: 36px;
+  line-height: 36px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div.card-list {
+  margin: 0;
+  max-height: 350px;
+  overflow: auto;
+}
+
+div.card-list::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+div.card-list::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+div.card-list::-webkit-scrollbar-thumb {
+  background-color: rgb(219, 213, 213);
+  border-right: 5px solid #ebecf0;
+}
+
+div.card-item {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
